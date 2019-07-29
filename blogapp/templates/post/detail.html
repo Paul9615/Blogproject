@@ -1,0 +1,12 @@
+    {%extends 'base.html'%}
+    {%block content%}
+    <!-- 여기선 view에서 선언한 detail를 따른다-->
+
+    <div class="container jumbotron">
+        <h1>{{post.title}}</h1>
+        <p>{{post.pub_date}}</p>
+        <p>{{post.body}}</p>
+        <a href="{%url 'main'%}">돌아가기</a>
+    </div>
+
+    {%endblock%}
